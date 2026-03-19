@@ -271,12 +271,3 @@ python auto_train.py
 
 ---
 
-## 📄 License
-
-MIT — do whatever you want with it.
-
----
-
-<div align="center">
-Built with 🖐️ + 🧠 + way too much caffeine · Woxsen University · ACV Project
-</div>

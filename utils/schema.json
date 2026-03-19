@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "description": "Air Writing Tetris — tetromino stroke image dataset",
+  "classes": ["I", "O", "T", "S", "Z", "J", "L"],
+  "num_classes": 7,
+  "image": {
+    "size_px": 64,
+    "channels": 1,
+    "format": "grayscale_uint8",
+    "normalisation": "divide_255_float32"
+  },
+  "augmentations": {
+    "rotation_deg":     [-38, 38],
+    "scale":            [0.60, 1.40],
+    "gaussian_noise_std": 10,
+    "stroke_thickness": [2, 3, 4],
+    "horizontal_flip": true
+  },
+  "split": { "train": 0.85, "validation": 0.15 },
+  "synthetic_samples_per_class": 900,
+  "total_synthetic": 6300,
+  "directory_layout": {
+    "root":         "data/dataset/",
+    "per_class":    "data/dataset/{CLASS}/",
+    "filename":     "{CLASS}_{INDEX:04d}.png",
+    "labels_file":  "data/dataset/labels.json",
+    "user_labeled": "data/user_labeled/{CLASS}/{CLASS}_{TIMESTAMP_MS}.png"
+  },
+  "labels_json_row": { "file": "I/I_0000.png", "label": "I" },
+  "model_output":   "data/model.pth",
+  "metrics_output": "data/confusion_matrix.png"
+}

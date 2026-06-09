@@ -258,7 +258,7 @@ python auto_train.py
 | FPS | ≥ 25 | 30–60 (CUDA) / 25–35 (CPU) |
 | Inference latency | < 100ms | < 5ms |
 | Synthetic val accuracy | ≥ 95% | 96–98% |
-| Gesture debounce | 320ms | — |
+| Gesture debounce | 320ms |   |
 
 ---
 

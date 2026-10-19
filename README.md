@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎮 Air Writing Tetris
+# 🎮 Air Writing Tetriss
 
 **Play Tetris by drawing pieces in the air — no keyboard needed.**
 
